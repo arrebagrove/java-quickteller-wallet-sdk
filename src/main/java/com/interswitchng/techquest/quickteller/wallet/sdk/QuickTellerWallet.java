@@ -45,12 +45,20 @@ public class QuickTellerWallet {
 	{
 		try
 		{
-			String subscriberId = "2348032286229"; // local format
+//			String subscriberId = "2348032286229"; // local format
+//			String ttid = "138";
+//			String pan = "5092032910293811203";
+//			String pin = "1111";
+//			String cvv2 = "111";
+//			String expiryDate = "1501"; // YYMM
+//			String paymentMethodTypeCode = "VVC";
+			
+			String subscriberId = "2348054582896"; // local format
 			String ttid = "138";
-			String pan = "5092032910293811203";
+			String pan = "5060990580000160624";
 			String pin = "1111";
-			String cvv2 = "111";
-			String expiryDate = "1501"; // YYMM
+			String cvv2 = "455";
+			String expiryDate = "1612"; // YYMM
 			String paymentMethodTypeCode = "VVC";
 			byte[] pinKeyBytes = DESUtils.generateKey();
 			String pinKeyHex = HexConverter.fromBinary2Hex(pinKeyBytes);
