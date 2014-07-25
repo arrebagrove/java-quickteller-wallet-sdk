@@ -37,6 +37,7 @@ public class QuickTellerWallet {
 			
 		System.out.println("MAC Cipher Text: " + macCipherText);
 		System.out.println("MAC Value: " + mac);
+		System.out.println("TTID Value: " + ttid);
 		System.out.println("Pin Data: " + pinData);
 		System.out.println("Secure: " + secure);
 	}

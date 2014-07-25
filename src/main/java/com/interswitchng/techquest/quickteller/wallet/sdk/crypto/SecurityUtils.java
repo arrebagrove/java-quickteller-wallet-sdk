@@ -170,7 +170,7 @@ public abstract class SecurityUtils {
 	}
 
 	/***
-	 * Use this method to generate secure for every other transaction type.
+	 * Use this method to generate secure for every other transaction type. (Generate Token, Balance Enquiry, Mini Statement)
 	 * @param subscriberId Subscriber mobile number
 	 * @param mac: Calculated MAC. Use MACUtils.getMAC().
 	 * @param pinKey: Generated Pin Key
