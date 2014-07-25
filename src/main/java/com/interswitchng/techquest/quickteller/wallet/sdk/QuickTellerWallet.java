@@ -53,9 +53,9 @@ public class QuickTellerWallet {
 //			String expiryDate = "1501"; // YYMM
 //			String paymentMethodTypeCode = "VVC";
 			
-			String subscriberId = "2348054582896"; // local format
-			String ttid = "138";
-			String pan = "5060990580000160624";
+			String subscriberId = "2348037119301"; // local format
+			String ttid = "139";
+			String pan = "5060990580000158230";
 			String pin = "1111";
 			String cvv2 = "455";
 			String expiryDate = "1612"; // YYMM
@@ -65,7 +65,7 @@ public class QuickTellerWallet {
 			pinKeyHex = "3B9BF75D1F917C2C3E13136D5191083E";
 			System.out.println("PIN Key: " + pinKeyHex);
 			QuickTellerWallet.createPaymentMethodRequest(subscriberId, pan, expiryDate, paymentMethodTypeCode, pinKeyHex);
-			QuickTellerWallet.createRequest(subscriberId, ttid, pin, cvv2, expiryDate, paymentMethodTypeCode, pinKeyHex);
+			QuickTellerWallet.createRequest(subscriberId, ttid, pin, cvv2, null, paymentMethodTypeCode, pinKeyHex);
 		}
 		catch(Exception ex)
 		{
