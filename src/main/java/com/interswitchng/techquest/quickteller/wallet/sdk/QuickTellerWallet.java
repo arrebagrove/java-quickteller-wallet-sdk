@@ -33,7 +33,7 @@ public class QuickTellerWallet {
 		
 		String mac = MACUtils.getMacValue(macCipherText, macKeyByte);
 		String pinData = SecurityUtils.getEncryptedPinCvv2ExpiryDateBlock(pin, cvv2, expiryDate, pinKeyBytes);	
-		String secure = SecurityUtils.getSecure(subscriberId, ttid, mac, pinKeyBytes, macKeyByte);
+		String secure = SecurityUtils.getSecure(subscriberId, mac, pinKeyBytes, macKeyByte);
 			
 		System.out.println("MAC Cipher Text: " + macCipherText);
 		System.out.println("MAC Value: " + mac);
