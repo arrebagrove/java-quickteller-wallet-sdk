@@ -25,7 +25,7 @@ public class QuickTellerWallet {
 		System.out.println("Secure: " + secure);
 	}
 	
-	public static void createRequest(String subscriberId, String ttid, String pin, String cvv2, String expiryDate, String paymentMethodTypeCode, String pinKey)
+	public static void generateTokenRequest(String subscriberId, String ttid, String pin, String cvv2, String expiryDate, String paymentMethodTypeCode, String pinKey)
 	{
 		byte[] pinKeyBytes = HexConverter.fromHex2ByteArray(pinKey.getBytes());
 		byte[] macKeyByte = pinKeyBytes;
@@ -66,7 +66,7 @@ public class QuickTellerWallet {
 			pinKeyHex = "3B9BF75D1F917C2C3E13136D5191083E";
 			System.out.println("PIN Key: " + pinKeyHex);
 			QuickTellerWallet.createPaymentMethodRequest(subscriberId, pan, expiryDate, paymentMethodTypeCode, pinKeyHex);
-			QuickTellerWallet.createRequest(subscriberId, ttid, pin, cvv2, expiryDate, paymentMethodTypeCode, pinKeyHex);
+			QuickTellerWallet.generateTokenRequest(subscriberId, ttid, pin, cvv2, expiryDate, paymentMethodTypeCode, pinKeyHex);
 		}
 		catch(Exception ex)
 		{
