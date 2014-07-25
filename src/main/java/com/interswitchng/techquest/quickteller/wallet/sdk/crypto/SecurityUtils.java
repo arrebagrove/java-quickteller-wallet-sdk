@@ -188,8 +188,8 @@ public abstract class SecurityUtils {
 
          byte[] secureBodyBytes = new byte[28];
 		 System.arraycopy(subscriberIdBytes, 0, secureBodyBytes, 0, 20);
-		 System.arraycopy(macBytes, 0, secureBodyBytes, 11, 4);
-		 System.arraycopy(padBytes, 0, secureBodyBytes, 15, 4);
+		 System.arraycopy(macBytes, 0, secureBodyBytes, 20, 4);
+		 System.arraycopy(padBytes, 0, secureBodyBytes, 24, 4);
 
          String secure = getSecure(secureBodyBytes, pinKey, macKey);
          return secure;
