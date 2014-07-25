@@ -54,9 +54,9 @@ public class QuickTellerWallet {
 //			String expiryDate = "1501"; // YYMM
 //			String paymentMethodTypeCode = "VVC";
 			
-			String subscriberId = "2348054582896"; // local format
-			String ttid = "138";
-			String pan = "5060990580000160624";
+			String subscriberId = "2348037119301"; // local format
+			String ttid = "139";
+			String pan = "5060990580000158230";
 			String pin = "1111";
 			String cvv2 = "455";
 			String expiryDate = "1612"; // YYMM
