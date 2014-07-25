@@ -43,6 +43,13 @@ public abstract class SecurityUtils {
 	 */
 	public static String getEncryptedPinCvv2ExpiryDateBlock(String pin, String cvv2, String expiryDate, byte[] pinKey)
 	{
+		if(pin == null || pin.equalsIgnoreCase(""))
+			pin = "0000";
+		if(cvv2 == null || cvv2.equalsIgnoreCase(""))
+			cvv2 = "000";
+		if(expiryDate == null || expiryDate.equalsIgnoreCase(""))
+			expiryDate = "0000";
+		
 		String pinBlockString = pin + cvv2 + expiryDate;
         int pinBlockStringLen = pinBlockString.length();
         String pinBlockLenLenString = String.valueOf(pinBlockStringLen);
